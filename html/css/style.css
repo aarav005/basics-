@@ -1,0 +1,13 @@
+h1 {
+  color: blueviolet;
+  font-size: 4rem;
+}
+.one {
+  color: blue;
+  border: 5px solid green;
+}
+
+/* css rules -- */
+/* seletors  eg h1*/
+/* declaration block   {}*/
+/* declatarion.. property eg: color: blue, value: blue */
