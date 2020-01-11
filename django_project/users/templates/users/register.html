@@ -1,0 +1,22 @@
+{%extends "blog/base.html"%} {%block content%}
+<div class="content-section">
+  <form method="POST">
+    <!--hidden tag that adds cross site frogery,, protects from attacks,, needs to added inevery form-->
+    {%csrf_token%}
+    <fieldset class="form-group">
+      <legend class="border_bottom mb-4">Join today</legend>
+      {{form.as_p}} #rendering the form as paragraph
+    </fieldset>
+
+    <div class="Form-group">
+      <button class="btn btn-outline-info" type="submit">Sign up</button>
+    </div>
+  </form>
+  <div class="border-top pt-3">
+    <small calss="text-muted">
+      already have an account?<a class="ml-2" href="#">sign in </a>
+    </small>
+  </div>
+</div>
+
+{%endblock content%}
